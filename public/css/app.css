@@ -1,0 +1,64 @@
+
+
+body{
+	margin: 0px;
+	padding: 0px;
+}
+.navbar{
+	background-color: rgba(225, 179, 179,.9);
+}
+
+.navbar-brand,.footer-logo{
+	font: italic bold 40px/70px Georgia, serif;
+	color: rgb(225,20,20);
+}
+.nav{
+	margin-left: 50px;
+}
+
+.active{
+	background-color: rgb(225,20,20);
+}
+
+.nav-item{
+	padding: 0 20px;
+	border-radius: 20px;
+	font-weight: bolder;
+}
+
+.footer{
+	background-color: rgb(13, 13, 13);
+	color: #F1C22E;
+}
+
+.footer .row > div{
+	padding: 50px;
+}
+
+.footer-p2 , .footer-p3,.footer-p4 {
+	margin-top: 30px;
+}
+
+.footer-head{
+	color: white;
+}
+
+ul{
+	list-style-type:none;
+}
+
+.social-media >a{
+	color: white;
+	text-decoration: none;
+}
+.social-media >a:hover{
+	color: gray;
+}
+li a{
+	color:#F1C22E;
+	text-decoration: none;
+}
+.content{
+	height: 500px;
+	max-height: 3000px;
+}
