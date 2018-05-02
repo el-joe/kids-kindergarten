@@ -24,23 +24,23 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="nav navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">HOME</a>
+      <li class="nav-item {{ Request::segment(1) === route('index') ? 'activeItem' : null }}">
+        <a class="nav-link" href="{{ route('index') }}">HOME</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">ABOUT US</a>
+      <li class="nav-item {{ Request::segment(1) === 'about-us' ? 'activeItem' : null }}">
+        <a class="nav-link" href="{{ route('about') }}">ABOUT US</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">CLASSES</a>
+      <li class="nav-item {{ Request::segment(1) === 'classes' ? 'activeItem' : null }}">
+        <a class="nav-link" href="{{ route('classes') }}">CLASSES</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">TEACHERS</a>
+      <li class="nav-item {{ Request::segment(1) === 'teachers' ? 'activeItem' : null }}">
+        <a class="nav-link" href="{{ route('teachers') }}">TEACHERS</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">GALLERY</a>
+      <li class="nav-item {{ Request::segment(1) === 'gallery' ? 'activeItem' : null }}">
+        <a class="nav-link" href="{{ route('gallery') }}">GALLERY</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">CONTACT US</a>
+      <li class="nav-item {{ Request::segment(1) === 'contact' ? 'activeItem' : null }}">
+        <a class="nav-link" href="{{ route('contact') }}">CONTACT US</a>
       </li>
     </ul>
   </div>
@@ -50,7 +50,9 @@
 
 
 <div class="content">
-    @yield('content')
+    <div style="padding-top: 72px;">
+        @yield('content')
+    </div>
 </div>
 
 <script
@@ -60,5 +62,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  if(!$('.nav-item').hasClass('activeItem')){
+    $('.nav-item').first().addClass('activeItem');
+  }
+</script>
 </body>
 </html>

@@ -1,11 +1,11 @@
-
-
 body{
 	margin: 0px;
 	padding: 0px;
+	box-sizing: border-box;
 }
 .navbar{
 	background-color: rgba(225, 179, 179,.9);
+	text-align: center;
 }
 
 .navbar-brand,.footer-logo{
@@ -16,7 +16,7 @@ body{
 	margin-left: 50px;
 }
 
-.active{
+.activeItem{
 	background-color: rgb(225,20,20);
 }
 
@@ -62,3 +62,152 @@ li a{
 	height: 500px;
 	max-height: 3000px;
 }
+    .strong1{
+        font: italic bold 30px/70px Courier New, serif;
+        color: #FF7300;
+    }
+    .strong2{
+        font-size: 40px;
+        text-align: left;
+        color: white;
+    }
+    .btn{
+        border-radius: 15px;
+    }
+    .more{
+        padding:0px 80px 80px 80px;
+        padding-top: 50px;
+        position: relative;
+        color: white;
+    }
+    .logo{
+        font-size: 40px;
+        border-radius: 50%;
+        position: absolute;
+        margin-top: -100px;
+        margin-left: -50px;
+    }
+    .logo1{
+        border: 30px solid #F1C22E;
+        background-color: #F1C22E;
+    }
+    .logo2{
+        border: 30px solid rgb(225,20,20);
+        background-color: rgb(225,20,20);
+    }
+    .logo3{
+        border: 30px solid rgb(51, 51, 255);
+        background-color: rgb(51, 51, 255);
+    }
+    .more{
+        margin-top: 60px;
+    }
+    .more:nth-child(2){
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+    }
+    .more strong{
+        font:small-caps 20px 0 Impact;
+        font-weight: 900;
+    }
+    .more p:nth-child(3){
+        letter-spacing: 3px;
+    }
+    .number{
+        border: 20px solid gray;
+        background-color: gray;
+        font-size: 30px;
+        width: 100px;
+        height: 100px;
+        color: white;
+        -webkit-transform: rotate(45deg);
+        margin-left: 100px;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+    .number p{
+        -webkit-transform: rotate(-45deg);
+        padding-bottom: 22px;
+        font-weight: 900;
+        font-family: italic;
+
+    }
+    .pop{
+        font: italic bold 30px/70px Courier New, serif;
+        color: rgb(225,20,20);
+    }
+    .body1{
+        padding-left: 30px;
+        font:italic bold 15px/30px Georgia, serif;
+        color: rgb(225,20,20);
+        font-weight: 900 bolder;
+    }
+    .body2{
+        text-align: right;
+        padding-right: 30px;
+        padding-top: 2px;
+        color: #F1C22E;
+    }
+    .panel{
+        background-color: #e6e6e6;
+        border-radius: 5px;
+        padding: 1px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px 5px #888888;
+
+    }
+    .panel-heading img{
+        border-radius: 10px 10px 0 0;
+    }
+    .panel-footer1{
+        background-color: rgb(225,20,20);
+        border-radius: 0 0 0 10px;
+    }
+    .panel-footer2{
+        background-color: #F1C22E;
+        border-radius: 0 0 10px 0;
+    }
+    .panel-footer1,.panel-footer2{
+        padding: 10px;
+        color: white;
+    }
+    .fas.fa-check-circle{
+        color: skyblue;
+        font-size: 25px;
+    }
+    .best{
+        font:italic bold 30px/45px Georgia, serif;
+        color: rgb(225,20,20);
+    }
+
+    .welcome{
+        color: rgb(225,20,20);
+        font:italic bold 40px/30px Georgia, serif;
+        padding-bottom: 30px;
+    }
+
+    .our-events{
+        margin-top: 200px;
+        margin-bottom: 20px; 
+    }
+    .ourevents-btn{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .jumbotron{
+    	margin-bottom: 0
+    }
+    .num{
+    	padding-top:150px;
+    	padding-bottom: 150px;
+    }
+    .ourTestimonials{
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .jumbotron.bgg{
+        background-color: #00a3cc;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
