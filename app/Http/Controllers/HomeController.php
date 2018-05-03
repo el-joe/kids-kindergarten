@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Teacher;
+use App\Teachers;
 class HomeController extends Controller
 {
 
@@ -16,11 +16,19 @@ class HomeController extends Controller
     {
         $ourProgramsSubmit = "<div class='row'>
             <div class='col'  align='center'>
-                <a class='btn btn-warning col-sm-2 col-md-6 col-lg-4' style='padding: 10px;'>SEE MORE CLASSES</a>
+                <a href='". route('classes') ."' class='btn btn-warning col-sm-2 col-md-6 col-lg-4' style='padding: 10px;'>SEE MORE CLASSES</a>
             </div>
         </div>";
 
-        $teacherCounter = Teacher::scopeCounter();
-        return view('main',compact('ourProgramsSubmit,teacherCounter'));
+        $teacherCounter = Teachers::Counter();
+
+
+
+        return view('main',compact('ourProgramsSubmit','teacherCounter'));
+    }
+
+    public function about()
+    {
+
     }
 }

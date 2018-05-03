@@ -14,7 +14,7 @@
     <div class="jumbotron bg-dark">
       <div class="col-sm-4"><strong class="strong1">Welcome to Kids</strong></div>     
       <p class="col-sm-4 "><strong class="strong2">Fun Learning Program For Your Child</strong></p>
-      <div class="col-sm-4"><a class="btn btn-danger">LEARN MORE</a></div>
+      <div class="col-sm-4"><a class="btn btn-danger" href="{{ route('about') }}">LEARN MORE</a></div>
     </div>
     <div class="container" style="padding-top: 20px">
         @include('layouts.about-us')
@@ -32,7 +32,7 @@
                           Curabitur est faucibus, malesuada esttincidunt etos et mauris, nunc a libero govum est cuprum.Praesent interdum est gravida vehicula est node maecenas loareet morbi a dosis luctus novum est praesent.<br>
                            Magna est consectetur interdum modest dictum.<br>
                             Curabitur est faucibus.</p>
-                        <a class="btn btn-warning">DISCOVER MORE</a>
+                        <a class="btn btn-warning" href="{{ route('about') }}">DISCOVER MORE</a>
                     </div>
                 </div>
         </div>

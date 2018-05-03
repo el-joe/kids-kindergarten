@@ -24,7 +24,7 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="nav navbar-nav">
-      <li class="nav-item {{ Request::segment(1) === route('index') ? 'activeItem' : null }}">
+      <li class="nav-item">
         <a class="nav-link" href="{{ route('index') }}">HOME</a>
       </li>
       <li class="nav-item {{ Request::segment(1) === 'about-us' ? 'activeItem' : null }}">

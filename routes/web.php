@@ -14,11 +14,7 @@
 Route::get('/', 'HomeController@index')->name('index');
 
 
-Route::get('about-us', function(){
-	$header = 'About Us';
-	$headerContent = 'Welcome to Kids';
-	return view('aboutUs',compact(['header','headerContent']));
-})->name('about');
+Route::get('about-us', 'HomeController@about')->name('about');
 
 Route::get('classes', function(){
 	$header = 'Our Programs';
@@ -41,3 +37,7 @@ Route::get('gallery', function(){
 
 Route::get('contact', 'mainController@contactShow')->name('contact');
 Route::post('contact', 'mainController@contactStore')->name('contact');
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
