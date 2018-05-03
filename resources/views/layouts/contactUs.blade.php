@@ -6,7 +6,7 @@
 				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
 			</div>
 			<div class="col-sm-4 text-center" style="padding-top: 30px;">
-				<a class="btn btn-warning col-sm-6" style="padding:10px;border-radius: 20px">CONTACT US</a>
+				<a class="btn btn-warning col-sm-6" href="{{ route('contact') }}" style="padding:10px;border-radius: 20px">CONTACT US</a>
 			</div>
 		</div>
 	</div>

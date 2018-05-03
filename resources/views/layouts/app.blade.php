@@ -66,6 +66,10 @@
   if(!$('.nav-item').hasClass('activeItem')){
     $('.nav-item').first().addClass('activeItem');
   }
+
+  $('.gallery').each(function(){
+    $(this).children().first().addClass('active');
+  });
 </script>
 </body>
 </html>

@@ -14,26 +14,13 @@
 Route::get('/', 'HomeController@index')->name('index');
 
 
-Route::get('about-us', 'HomeController@about')->name('about');
+Route::get('about-us', 'mainController@about')->name('about');
 
-Route::get('classes', function(){
-	$header = 'Our Programs';
-	$headerContent = 'Popular Classes';
-	$ourProgramsSubmit='';
-	return view('classes',compact(['header','headerContent','ourProgramsSubmit']));
-})->name('classes');
+Route::get('classes', 'mainController@class')->name('classes');
 
-Route::get('teachers', function(){
-	$header = 'Our Staff';
-	$headerContent = 'Meet Teachers';
-	return view('teachers',compact(['header','headerContent']));
-})->name('teachers');
+Route::get('teachers', 'mainController@teacher')->name('teachers');
 
-Route::get('gallery', function(){
-	$header = 'Our Gallery';
-	$headerContent = 'Moment from Kids';
-	return view('gallery',compact(['header','headerContent']));
-})->name('gallery');
+Route::get('gallery', 'mainController@gallery')->name('gallery');
 
 Route::get('contact', 'mainController@contactShow')->name('contact');
 Route::post('contact', 'mainController@contactStore')->name('contact');

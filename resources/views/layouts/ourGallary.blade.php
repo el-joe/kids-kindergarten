@@ -7,28 +7,16 @@
                             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                           </ol>
-                          <div class="carousel-inner">
-                            <div class="carousel-item active">
-                              <img class="d-block w-100" src="http://placehold.it/300x300" alt="First slide">
-                              <div class="carousel-caption d-none d-md-block">
-                                <h5>...</h5>
-                                <p>...</p>
-                              </div>
-                            </div>
+                          <div class="carousel-inner gallery">
+                            @foreach($galleries as $gallery)
                             <div class="carousel-item">
-                              <img class="d-block w-100" src="http://placehold.it/300x300" alt="Second slide">
+                              <img class="d-block w-100" style="height: 300px" src="../public{{ Storage::url($gallery->avatar) }}" alt="First slide">
                               <div class="carousel-caption d-none d-md-block">
                                 <h5>...</h5>
                                 <p>...</p>
                               </div>
                             </div>
-                            <div class="carousel-item">
-                              <img class="d-block w-100" src="http://placehold.it/300x300" alt="Third slide">
-                              <div class="carousel-caption d-none d-md-block">
-                                <h5>...</h5>
-                                <p>...</p>
-                              </div>
-                            </div>
+                            @endforeach
                           </div>
                           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>

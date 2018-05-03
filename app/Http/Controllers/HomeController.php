@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Teachers;
+use App\Classes;
+use App\Gallery;
+use App\Contact;
 class HomeController extends Controller
 {
 
@@ -22,13 +25,16 @@ class HomeController extends Controller
 
         $teacherCounter = Teachers::Counter();
 
+        $classCounter   = Classes::all()->count();
 
+        $classes = Classes::inRandomOrder()->take(3)->get();
 
-        return view('main',compact('ourProgramsSubmit','teacherCounter'));
+        $galleries = Gallery::inRandomOrder()->take(3)->get();
+
+        $contacts   = Contact::inRandomOrder()->take(3)->get();
+
+        return view('main',compact('ourProgramsSubmit','teacherCounter','classCounter','classes','galleries','contacts'));
     }
 
-    public function about()
-    {
 
-    }
 }
